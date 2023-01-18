@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;  
+    }
+body > header{ /*essa estrutura permite que o elemento filho direto seja selecionado, dessa forma as outras tags header não serão alteradas */
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+    header .container{
+        display: flex; /*faz com que os elementos do header fiquem lado a lado: esportes, economia*/
+        align-items: center; /* alinha os itens no centro */
+        justify-content: space-between;
+    }
+    header li {
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+
+    header li a {
+        color:#f5f6fa;
+        text-decoration: none;
+        margin-left: 16px;
+    }
+    .container {
+        width: 1024px;
+        margin: 0 auto; 
+    }
+
+.articles {
+    display:flex;
+    flex-wrap: wrap; /*para fazer com que os elementos "adicionem a linha" quando o tamanho for alcançado, respeitando o tamanho de 30% que foi estabelecido */
+    justify-content: space-between; /* o espaço é divido de maneira igualitária entre os itens */
+    }
+
+.articles article img {
+    /*height: 180px; /* definindo o tamanho das imagens, a largura seguirá a proporção*/
+    width: 100%;
+}
+
+.articles article {
+    width: 30% /* Como queremos três elementos por linha, dividiu-se o espaço total (100%) por 3, a aproximamos para 30% */
+}
+section {
+    padding: 16px 0;
+}
+section h2, 
+.articles article { /*com a vírgula podemos juntar os seletores e aplicar a mesma estilização para eles*/
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.articles article a:hover { /*Faz com que ao passar o mouse por cima, o comportamento do botão mude, nesse caso, apareça sublinhado*/
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+section h2 {
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(0,255,0, 0.1);
+}
+
+#sports .articles article a{
+    background-color: rgba(0,255,0, 0.8);
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#Entretenimento{
+    background-color: rgba(155, 44, 245, 0.226);
+}
+
+#Entretenimento .articles article a{
+    background-color:rgba(92, 5, 163, 0.647);
+}
+
+#Tecnologia{
+    background-color: rgba(86, 143, 243, 0.214);
+}
+
+#Tecnologia .articles article a{
+    background-color:rgba(15, 59, 236, 0.805);
+}
