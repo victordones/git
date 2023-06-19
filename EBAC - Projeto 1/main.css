@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+
+header {
+padding: 16px 0;
+background-color: #6636e9;
+color: #fff
+}
+
+header, section h2, section h3, form button {
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Skranji', cursive;}
+
+header h1 {
+    font-size: 35px;
+}
+header nav li {
+    display: inline;
+}
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container ul li {
+display: inline-block;
+}
+
+.brands-list img {
+    height: 40px;
+
+}
+
+header .container, section .container {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+header ul li {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+section {
+    padding: 24px 0;
+
+}
+section container {
+    align-items: flex-start;
+
+}
+
+section h2  {
+    margin-bottom: 8px;
+    color: #2b00a0;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Skranji', cursive;
+}
+
+
+section p {
+    margin-bottom: 8px;
+    color:#160d2e
+}
+
+.capa {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+
+
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+section h3 {
+    margin-bottom: 16px;
+
+}
+
+form button {
+    background-color: #6636e9;
+    color: #fff;
+    cursor: pointer;
+    border:none
+}
+
+form button:hover {
+    background-color: #c28feb;
+
+}
+
+input:focus, textarea:focus {
+    outline-color: #6636e9;
+}
+
+footer{
+    background-color: #6636e9;
+    color: #dcb7fa;
+    padding: 16px;
+}
